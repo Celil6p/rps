@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<header>
+    <h1>Rock Paper Scissors</h1>
+</header>
+<body>
+    
+    <div class="options">
+        <div class="player">
+            <h2>Player</h2>
+            <button onclick="game('rock')()" id="prock"><img src="./assets/rock.png" alt="rock"></button>
+            <button onclick="game('paper')" id="ppaper"><img src="./assets/paper.png" alt="paper"></button>
+            <button onclick="game('scissors')" id="pscissors"><img src="./assets/scissors.png" alt="scissors"></button>
+        </div>
+        <div class="table">
+            <div class="score">
+                <div class="playerScore">
+                    <p class="play">0</p>
+                </div>
+                <p>:</p>
+                <div class="computerScore">
+                    <p class="comp">0</p>
+                </div>
+            </div>
+        </div>
+        <div class="computer">
+            <h2>Computer</h2>
+            <button id="crock" disabled><img src="./assets/rock.png" alt="rock"></button>
+            <button id="cpaper" disabled><img src="./assets/paper.png" alt="paper"></button>
+            <button id="cscissors" disabled><img src="./assets/scissors.png" alt="scissors"></button>
+    </div>
+    </div>
+   
+    <p class="result"> Pick One</p>
+    <div class="resetButton">
+        <button class="reset" onclick="reset()">Reset</button>
+    </div>
+    <script src="./app.js"></script>
+
+</body>
+</html>

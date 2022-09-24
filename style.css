@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(72,86,159);
+    background: radial-gradient(circle, rgba(72,86,159,1) 69%, rgba(28,9,13,1) 100%); 
+}
+header{
+    padding: 0;
+    margin: 0;
+}
+header > h1{
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.options{
+    display: flex;
+    justify-content: center;
+}
+.computer{
+    float: right;
+    justify-content: right;
+}
+.player{
+    float: left;
+    justify-content: left;
+}
+h2{
+    text-align: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.table{
+    width: 30%;
+    height: auto;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    font-size: 90px;
+    top:50%;
+    align-items: center;
+}
+.score{
+    width: 50%;
+    height: 30%;
+    display: flex;
+    border: 3px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
+}
+.computer > button{
+    display: flex;
+    margin: 50px;
+    justify-content: right;
+    flex-direction: column;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    
+}
+.player > button{
+    margin: 50px;
+    display:flex;
+    justify-content: left;
+    flex-direction: column;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    transition: 0.2s;
+    border: 6px blue;
+}
+.player > button:hover{
+    box-shadow:inset 3px 3px 5px #171756;
+    padding: 3px;
+    cursor: pointer;
+}
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.resetButton{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+}
+.reset{
+    width: 130px;
+    height: 50px;
+    font-size: 28px;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    background-color: rgb(92, 8, 8);
+    border-radius: 20px;
+}
+.reset:hover{
+    box-shadow:inset 4px 4px 5px #171756;
+    padding: 3px;
+    cursor: pointer;
+}
